@@ -24,6 +24,9 @@
     "test": "yarn lint && jest",
     "release": "yarn test && yarn build && standard-version && git push --follow-tags && npm publish"
   },
+  "precommit": [
+    "build"
+  ],
   "files": [
     "dist",
     "templates"
